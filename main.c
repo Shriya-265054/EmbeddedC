@@ -1,5 +1,4 @@
 #include <avr/io.h>
-#include<util/delay.h>
 int main(void)
 {
     DDRD |= (1<<PD0); //set PB0=1 FOR LED
