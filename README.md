@@ -1,5 +1,7 @@
 # EmbeddedC
 
+## Seat Heating App
+
 #### CI and Code Quality
 
 |Build|Cppcheck|Codacy|
