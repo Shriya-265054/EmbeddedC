@@ -3,7 +3,7 @@ PROJ_NAME = Activity1
 BUILD_DIR = build
 
 # All Source code files
-SRC = main.c\
+SRC = SeatHeatingApp.c.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
