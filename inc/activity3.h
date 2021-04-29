@@ -11,7 +11,11 @@
 
 #ifndef __ACTIVITY3_H__
 #define __ACTIVITY3_H__
-
+#include<avr/io.h>
+/**
+ * @brief Generating PWM output
+ * 
+ */
 void initPWM(void);
 void outputPWM(uint16_t temp);
 

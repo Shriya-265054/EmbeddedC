@@ -1,14 +1,28 @@
+/**
+ * @file SeatHeatingApp.c
+ * @author Shriya (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-29
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include <avr/io.h>
+#include<util/delay.h>
 #include"./inc/activity1.h"
 #include"./inc/activity2.h"
 #include"./inc/activity3.h"
+#include"./inc/activity4.h"
 
 int main(void)
 {
     buttonheat();
     InitADC();
     initPWM();
-    uint16_t temp=0, channel=0;
+    InitUART();
+    uint16_t temp=0;
+    char temp_data;
      while(1)
     {
         // check button is on or off
@@ -18,8 +32,9 @@ int main(void)
             if(HEATER_ON)
             {
                 LED_ON;
-                temp = ReadTemp(channel);
-                outputPWM(temp);
+                temp = ReadTemp(0);
+                temp_data=outputPWM(temp);
+                write_string(temp_data);
                 _delay_ms(200);
             }
             else 

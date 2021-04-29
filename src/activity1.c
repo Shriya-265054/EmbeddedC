@@ -1,31 +1,41 @@
+/**
+ * @file activity1.c
+ * @author Shriya
+ * @brief 
+ * @version 0.1
+ * @date 2021-04-29
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include<avr/io.h>
 #include"../inc/activity1.h"
 
 void buttonheat()
 {
-    DDRC &= ~(1<<PC0); //set PC0=0, CLEAR BIT, "BUTTON"
-    DDRB &= ~(1<<PB0); // set PB0=0, "HEATER"
-    DDRD |= (1<<PD0); //set PB0=1 FOR LED
+    DDRD &= ~(1<<PD1); //set PD1=0, CLEAR BIT, "BUTTON"
+    DDRD &= ~(1<<PD0); // set PD0=0, "HEATER"
+    DDRB |= (1<<PB0); //set PD0=1 FOR LED
 
-    PORTC |= (1<<PC0); // SET BIT
-    PORTB |= (1<<PB0); //set bit
+    PORTD |= (1<<PD0); // SET BIT
+    PORTD |= (1<<PD1); //set bit
     while(1)
     {
-        if ((PINC &(1<<PC0)) && ((PINB & (1<<PB0))))
+        if ((PIND &(1<<PD1)) && ((PIND & (1<<PD0))))
         {
-            PORTD &= ~(1<<PD0);
+            PORTB &= ~(1<<PB0);
         }
-        else if ((PINC &(1<<PC0)) && (!(PINB &(1<<PB0))))
+        else if ((PIND &(1<<PD1)) && (!(PIND &(1<<PD0))))
         {
-            PORTD &= ~(1<<PD0);
+            PORTB &= ~(1<<PB0);
         }
-        else if ((!(PINC &(1<<PC0))) && (PINB &(1<<PB0)))
+        else if ((!(PIND &(1<<PD1))) && (PIND &(1<<PD0)))
         {
-            PORTD &= ~(1<<PD0);
+            PORTB &= ~(1<<PB0);
         }
-        else if ((!(PINC &(1<<PC0))) && (!(PINB &(1<<PB0))))
+        else if ((!(PIND &(1<<PD1))) && (!(PIND &(1<<PD0))))
         {
-            PORTD |= (1<<PD0);
+            PORTB |= (1<<PB0);
         }
     }
 }
