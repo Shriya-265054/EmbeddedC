@@ -27,7 +27,7 @@ void initPWM(void)
  * 
  * @param temp 
  */
-void outputPWM(uint16_t temp)
+char outputPWM(uint16_t temp)
 {
     
     if(temp >=0 && temp >=200)

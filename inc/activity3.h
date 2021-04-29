@@ -17,6 +17,6 @@
  * 
  */
 void initPWM(void);
-void outputPWM(uint16_t temp);
+char outputPWM(uint16_t temp);
 
 #endif
