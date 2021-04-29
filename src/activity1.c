@@ -9,4 +9,23 @@ void buttonheat()
 
     PORTC |= (1<<PC0); // SET BIT
     PORTB |= (1<<PB0); //set bit
+    while(1)
+    {
+        if ((PINC &(1<<PC0)) && ((PINB & (1<<PB0))))
+        {
+            PORTD &= ~(1<<PD0);
+        }
+        else if ((PINC &(1<<PC0)) && (!(PINB &(1<<PB0))))
+        {
+            PORTD &= ~(1<<PD0);
+        }
+        else if ((!(PINC &(1<<PC0))) && (PINB &(1<<PB0)))
+        {
+            PORTD &= ~(1<<PD0);
+        }
+        else if ((!(PINC &(1<<PC0))) && (!(PINB &(1<<PB0))))
+        {
+            PORTD |= (1<<PD0);
+        }
+    }
 }

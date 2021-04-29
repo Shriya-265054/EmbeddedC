@@ -1,28 +1,38 @@
 #include <avr/io.h>
 #include"./inc/activity1.h"
+#include"./inc/activity2.h"
+#include"./inc/activity3.h"
 
 int main(void)
 {
     buttonheat();
-    while(1)
+    InitADC();
+    initPWM();
+    uint16_t temp=0, channel=0;
+     while(1)
     {
-        if ((PINC &(1<<PC0)) && ((PINB & (1<<PB0))))
+        // check button is on or off
+        if(BUTTON_ON)
         {
-            PORTD &= ~(1<<PD0);
+            // check heater is on or off
+            if(HEATER_ON)
+            {
+                LED_ON;
+                temp = ReadTemp(channel);
+                outputPWM(temp);
+                _delay_ms(200);
+            }
+            else 
+            {
+                LED_OFF;
+                OCR1A=0;
+            }
         }
-        else if ((PINC &(1<<PC0)) && (!(PINB &(1<<PB0))))
+        else
         {
-            PORTD &= ~(1<<PD0);
-        }
-        else if ((!(PINC &(1<<PC0))) && (PINB &(1<<PB0)))
-        {
-            PORTD &= ~(1<<PD0);
-        }
-        else if ((!(PINC &(1<<PC0))) && (!(PINB &(1<<PB0))))
-        {
-            PORTD |= (1<<PD0);
-        }
-
+            LED_OFF;
+            OCR1A=0;
+        } 
     }
     return 0;
 }
