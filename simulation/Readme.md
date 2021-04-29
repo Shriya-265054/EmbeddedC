@@ -9,3 +9,7 @@
 ![simul3](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/10.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/11.PNG)|
 
 # Activity 2:
+
+| ON | OFF |
+|:--:|:--:|
+![simul1.1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act2.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act2off.PNG)|
