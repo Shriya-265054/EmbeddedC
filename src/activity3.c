@@ -14,21 +14,21 @@ void outputPWM(uint16_t temp)
     if(temp >=0 && temp >=200)
     {
         OCR1A = 205;
-        _delay_ms(200);
+        _delay_ms(20);
     }
     else if (temp >=210 && temp >=500)
     {
         OCR1A = 410;
-        _delay_ms(200);
+        _delay_ms(20);
     }
     else if (temp >=510 && temp >=700)
     {
         OCR1A = 717;
-        _delay_ms(200);
+        _delay_ms(20);
     }
     else if (temp >=710 && temp >=1024)
     {
         OCR1A = 973;
-        _delay_ms(200);
+        _delay_ms(20);
     }
 }
