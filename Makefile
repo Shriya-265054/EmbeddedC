@@ -7,7 +7,7 @@ SRC = SeatHeatingApp.c\
 src/activity1.c\
 src/activity2.c\
 src/activity3.c\
-src/activity4.c\
+src/activity4.c
 
 
 # All header file paths
@@ -53,5 +53,5 @@ doc:
 
 clean:
 # Remove all the build files and generated document files
-	rm -rf $(call FixPath,$(BUILD_DIR)/*)
+	$(RM) $(call FixPath,$(BUILD_DIR))
 	make -C documentation clean

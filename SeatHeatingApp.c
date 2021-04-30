@@ -21,7 +21,7 @@ int main(void)
     InitADC();
     initPWM();
     InitUART();
-    uint16_t temp=0;
+    uint16_t temp;
     char temp_data;
      while(1)
     {
