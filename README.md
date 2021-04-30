@@ -25,3 +25,32 @@
 |:--:|:--:|:--:|
 [![Compile-Linux](https://github.com/Shriya-265054/EmbeddedC/actions/workflows/Compile.yml/badge.svg)](https://github.com/Shriya-265054/EmbeddedC/actions/workflows/Compile.yml)|[![Cppcheck](https://github.com/Shriya-265054/EmbeddedC/actions/workflows/CodeQuality.yml/badge.svg)](https://github.com/Shriya-265054/EmbeddedC/actions/workflows/CodeQuality.yml)|[![Codacy Badge](https://app.codacy.com/project/badge/Grade/44d5a86dd7c24d0aa4f1e2eb272187e6)](https://www.codacy.com/gh/Shriya-265054/EmbeddedC/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Shriya-265054/EmbeddedC&amp;utm_campaign=Badge_Grade)|
 
+# Activity 1:
+
+|When button is "OFF" and heater is "OFF"|When button is "OFF" and heater is "ON"|
+|:--:|:--:|
+![simul1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/00.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/01.PNG)|
+
+|When button is "ON" and heater is "OFF"|When button is "ON" and heater is "ON"|
+|:--:|:--:|
+![simul3](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/10.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/11.PNG)|
+
+# Activity 2:
+
+| ON | OFF |
+|:--:|:--:|
+![simul1.1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act2.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act2off.PNG)|
+
+# Activity 3:
+
+| ON | OFF |
+|:--:|:--:|
+![simul1.1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/acti3on.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/acti3off.PNG)|
+
+# Activity 4:
+
+| ON | OFF |
+|:--:|:--:|
+![simul1.1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act4.1on.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act4off.PNG)|
+
+
