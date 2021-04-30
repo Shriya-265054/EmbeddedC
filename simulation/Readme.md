@@ -20,7 +20,7 @@
 |:--:|:--:|
 ![simul1.1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/acti3on.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/acti3off.PNG)|
 
-#Activity 4:
+# Activity 4:
 
 | ON | OFF |
 |:--:|:--:|
