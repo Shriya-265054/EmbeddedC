@@ -6,7 +6,7 @@
 
 
 ### Case Study: 
-![case](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/case%20study.PNG)
+![casestudy](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/case%20study.PNG)
 
 #### CI and Code Quality
 
