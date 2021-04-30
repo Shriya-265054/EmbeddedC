@@ -1,15 +1,21 @@
-## When button is "OFF" and heater is "OFF" 
+# Activity 1:
 
-![simul1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/00.PNG)
+|When button is "OFF" and heater is "OFF"|When button is "OFF" and heater is "ON"|
+|:--:|:--:|
+![simul1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/00.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/01.PNG)|
 
-## When button is "OFF" and heater is "ON"
+|When button is "ON" and heater is "OFF"|When button is "ON" and heater is "ON"|
+|:--:|:--:|
+![simul3](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/10.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/11.PNG)|
 
-![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/01.PNG)
+# Activity 2:
 
-## When button is "ON" and heater is "OFF"
+| ON | OFF |
+|:--:|:--:|
+![simul1.1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act2.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act2off.PNG)|
 
-![simul3](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/10.PNG)
+# Activity 3:
 
-## When button is "ON" and heater is "ON"
-
-![simul4](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/11.PNG)
+| ON | OFF |
+|:--:|:--:|
+![simul1.1](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act3on.PNG)|![simul2](https://github.com/Shriya-265054/EmbeddedC/blob/main/simulation/act3off.PNG)|
