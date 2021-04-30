@@ -1,6 +1,6 @@
 # EmbeddedC
 
-## Seat Heating App
+# Seat Heating App
 
 
 
