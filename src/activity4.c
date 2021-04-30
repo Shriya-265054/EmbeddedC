@@ -2,7 +2,6 @@
 #include"../inc/activity4.h"
 
 #define BAUD 9600
-#define F_CPU 16000000
 #define BAUDRATE ((F_CPU)/(BAUD*16UL)-1)
 #define TRANSMITING_DATA !(UCSR0A & (1<<UDRE0))
 #define RECEIVING_DATA !(UCSR0A & (1<<RXC0))

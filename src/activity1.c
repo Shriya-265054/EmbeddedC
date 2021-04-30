@@ -15,7 +15,7 @@ void buttonheat()
 {
     DDRD &= ~(1<<PD1); //set PD1=0, CLEAR BIT, "BUTTON"
     DDRD &= ~(1<<PD0); // set PD0=0, "HEATER"
-    DDRB |= (1<<PB0); //set PD0=1 FOR LED
+    DDRB |= (1<<PB0); //set PB0=1 FOR LED
 
     PORTD |= (1<<PD0); // SET BIT
     PORTD |= (1<<PD1); //set bit

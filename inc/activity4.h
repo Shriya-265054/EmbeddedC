@@ -22,6 +22,6 @@ void InitUART();
  * @brief Write character to ports
  * 
  */
-void write_string(char);
+void write_string(char input);
 
 #endif
