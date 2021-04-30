@@ -11,7 +11,10 @@
 #include<avr/io.h>
 #include<util/delay.h>
 #include "../inc/activity2.h"
-
+/**
+ * @brief Initializing and reading ADC values
+ * 
+ */
 void InitADC()
 {
     ADMUX|=(1<<REFS0); // AVcc to +5V

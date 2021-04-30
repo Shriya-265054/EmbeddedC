@@ -7,7 +7,10 @@
 #define TRANSMITING_DATA !(UCSR0A & (1<<UDRE0))
 #define RECEIVING_DATA !(UCSR0A & (1<<RXC0))
 #define INPUT UDR0
-
+/**
+ * @brief Initialize UART
+ * 
+ */
 void InitUART()
 {
     UBRR0H = (BAUDRATE>>8)&(0x00ff); //Set Baud rate 

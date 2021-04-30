@@ -19,6 +19,10 @@ void buttonheat()
 
     PORTD |= (1<<PD0); // SET BIT
     PORTD |= (1<<PD1); //set bit
+    /**
+     * @brief Checking the inputs from button sensor and heater sensor to glow the LED.
+     * 
+     */
     while(1)
     {
         if ((PIND &(1<<PD1)) && ((PIND & (1<<PD0))))
