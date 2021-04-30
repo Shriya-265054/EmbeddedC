@@ -26,15 +26,6 @@ void InitUART()
 
 void write_string(char input)
 {
-    if(input == 'q')
-    {
-        while(TRANSMITING_DATA)
-        {};
-        INPUT='2';
-        INPUT='5';
-        INPUT='C';
-        INPUT=' ';
-    }
     if(input == 'p')
     {
         while(TRANSMITING_DATA)
@@ -44,7 +35,16 @@ void write_string(char input)
         INPUT='C';
         INPUT=' ';
     }
-    if(input == 'r')
+    else if(input == 'q')
+    {
+        while(TRANSMITING_DATA)
+        {};
+        INPUT='2';
+        INPUT='5';
+        INPUT='C';
+        INPUT=' ';
+    }
+    else if(input == 'r')
     {
         while(TRANSMITING_DATA)
         {};
@@ -53,7 +53,7 @@ void write_string(char input)
         INPUT='C';
         INPUT=' ';
     }
-    if(input == 's')
+    else
     {
         while(TRANSMITING_DATA)
         {};

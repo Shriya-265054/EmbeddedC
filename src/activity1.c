@@ -23,8 +23,6 @@ void buttonheat()
      * @brief Checking the inputs from button sensor and heater sensor to glow the LED.
      *
      */
-    while(1)
-    {
         if ((PIND &(1<<PD1)) && ((PIND & (1<<PD0))))
         {
             PORTB &= ~(1<<PB0);
@@ -41,5 +39,4 @@ void buttonheat()
         {
             PORTB |= (1<<PB0);
         }
-    }
 }
