@@ -30,25 +30,25 @@ void initPWM(void)
 char outputPWM(uint16_t temp)
 {
     
-    if(temp >=0 && temp >=200)
+    if(temp>=0 && temp<=200)
     {
         OCR1A = 205;  //20% of duty cycle
         _delay_ms(20);
         return 'p';
     }
-    else if (temp >=210 && temp >=500)
+    else if (temp>=210 && temp<=500)
     {
         OCR1A = 410;  //40% of duty cycle
         _delay_ms(20);
         return 'q';
     }
-    else if (temp >=510 && temp >=700)
+    else if (temp>=510 && temp<=700)
     {
         OCR1A = 717;   //70% of duty cycle
         _delay_ms(20);
         return 'r';
     }
-    else if (temp >=710 && temp >=1024)
+    else if (temp>=710 && temp<=1024)
     {
         OCR1A = 973;   //95% of duty cycle
         _delay_ms(20);
