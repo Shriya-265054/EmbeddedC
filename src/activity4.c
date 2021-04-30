@@ -8,20 +8,20 @@
 #define INPUT UDR0
 /**
  * @brief Initialize UART
- * 
+ *
  */
 void InitUART()
 {
-    UBRR0H = (BAUDRATE>>8)&(0x00ff); //Set Baud rate 
+    UBRR0H = (BAUDRATE>>8)&(0x00ff); //Set Baud rate
     UBRR0L = BAUDRATE;
     UCSR0C = (1<<UMSEL00)|(1<<UCSZ01)|(1<<UCSZ00); //Enabling transmitter and receiver
-    UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0); 
+    UCSR0B=(1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
 }
 
 /**
  * @brief write UART
- * 
- * @param input 
+ *
+ * @param input
  */
 
 void write_string(char input)

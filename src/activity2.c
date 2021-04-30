@@ -1,19 +1,19 @@
 /**
  * @file activity2.c
  * @author Shriya
- * @brief 
+ * @brief
  * @version 0.1
  * @date 2021-04-29
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 #include<avr/io.h>
 #include<util/delay.h>
 #include "../inc/activity2.h"
 /**
  * @brief Initializing and reading ADC values
- * 
+ *
  */
 void InitADC()
 {
@@ -27,7 +27,7 @@ uint16_t ReadTemp(uint8_t channel)
     ADMUX&=0xf8;
     channel=channel&0b00000111;
     ADMUX|=channel;
-    // Start conversion 
+    // Start conversion
     ADCSRA|=(1<<ADSC);
     // Set ADIF to 1 when conversion is complete
     while(!(ADCSRA & (1<<ADIF)));

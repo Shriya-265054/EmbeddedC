@@ -1,12 +1,12 @@
 /**
  * @file activity3.c
  * @author Shriya
- * @brief 
+ * @brief
  * @version 0.1
  * @date 2021-04-29
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 #include<avr/io.h>
 #include<util/delay.h>
@@ -14,7 +14,7 @@
 #include"../inc/activity4.h"
 /**
  * @brief Initializing Timer 1
- * 
+ *
  */
 void initPWM(void)
 {
@@ -24,12 +24,12 @@ void initPWM(void)
 }
 /**
  * @brief Generate PWM
- * 
- * @param temp 
+ *
+ * @param temp
  */
 char outputPWM(uint16_t temp)
 {
-    
+
     if(temp>=0 && temp<=200)
     {
         OCR1A = 205;  //20% of duty cycle
@@ -54,4 +54,5 @@ char outputPWM(uint16_t temp)
         _delay_ms(20);
         return 's';
     }
+    return 0;
 }

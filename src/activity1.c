@@ -1,12 +1,12 @@
 /**
  * @file activity1.c
  * @author Shriya
- * @brief 
+ * @brief
  * @version 0.1
  * @date 2021-04-29
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 #include<avr/io.h>
 #include"../inc/activity1.h"
@@ -21,7 +21,7 @@ void buttonheat()
     PORTD |= (1<<PD1); //set bit
     /**
      * @brief Checking the inputs from button sensor and heater sensor to glow the LED.
-     * 
+     *
      */
     while(1)
     {

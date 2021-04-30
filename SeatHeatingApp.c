@@ -1,12 +1,12 @@
 /**
  * @file SeatHeatingApp.c
  * @author Shriya (you@domain.com)
- * @brief 
+ * @brief
  * @version 0.1
  * @date 2021-04-29
- * 
+ *
  * @copyright Copyright (c) 2021
- * 
+ *
  */
 #include <avr/io.h>
 #include<util/delay.h>
@@ -37,7 +37,7 @@ int main(void)
                 write_string(temp_data);
                 _delay_ms(200);
             }
-            else 
+            else
             {
                 LED_OFF;
                 OCR1A=0;
@@ -47,7 +47,7 @@ int main(void)
         {
             LED_OFF;
             OCR1A=0;
-        } 
+        }
     }
     return 0;
 }
