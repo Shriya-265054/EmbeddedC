@@ -25,6 +25,18 @@
 var NAVTREE =
 [
   [ "Seat Heating App", "index.html", [
+    [ "EmbeddedC", "md__f__codeblocks__embedded_c__embedded_c__r_e_a_d_m_e.html", [
+      [ "Seat Heating App", "md__f__codeblocks__embedded_c__embedded_c__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "Activity 1:", "md__f__codeblocks__embedded_c__embedded_c__r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "Activity 2:", "md__f__codeblocks__embedded_c__embedded_c__r_e_a_d_m_e.html#autotoc_md6", null ],
+      [ "Activity 3:", "md__f__codeblocks__embedded_c__embedded_c__r_e_a_d_m_e.html#autotoc_md7", null ],
+      [ "Activity 4:", "md__f__codeblocks__embedded_c__embedded_c__r_e_a_d_m_e.html#autotoc_md8", null ]
+    ] ],
+    [ "Activity 1:", "md__f__codeblocks__embedded_c__embedded_c_simulation__readme.html", [
+      [ "Activity 2:", "md__f__codeblocks__embedded_c__embedded_c_simulation__readme.html#autotoc_md10", null ],
+      [ "Activity 3:", "md__f__codeblocks__embedded_c__embedded_c_simulation__readme.html#autotoc_md11", null ],
+      [ "Activity 4:", "md__f__codeblocks__embedded_c__embedded_c_simulation__readme.html#autotoc_md12", null ]
+    ] ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
@@ -38,7 +50,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"activity1_8c.html"
+"_seat_heating_app_8c.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

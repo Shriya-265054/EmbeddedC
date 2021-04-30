@@ -99,15 +99,13 @@ $(document).ready(function(){initNavTree('activity4_8c.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;avr/io.h&gt;</code><br />
-<code>#include &quot;../inc/activity4.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="activity4_8h_source.html">../inc/activity4.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a62634036639f88eece6fbf226b45f84b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="activity4_8c.html#a62634036639f88eece6fbf226b45f84b">BAUD</a>&#160;&#160;&#160;9600</td></tr>
 <tr class="separator:a62634036639f88eece6fbf226b45f84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="activity4_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>&#160;&#160;&#160;16000000</td></tr>
-<tr class="separator:a43bafb28b29491ec7f871319b5a3b2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a734bbab06e1a9fd2e5522db0221ff6e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="activity4_8c.html#a734bbab06e1a9fd2e5522db0221ff6e3">BAUDRATE</a>&#160;&#160;&#160;((<a class="el" href="activity4_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>)/(<a class="el" href="activity4_8c.html#a62634036639f88eece6fbf226b45f84b">BAUD</a>*16UL)-1)</td></tr>
+<tr class="memitem:a734bbab06e1a9fd2e5522db0221ff6e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="activity4_8c.html#a734bbab06e1a9fd2e5522db0221ff6e3">BAUDRATE</a>&#160;&#160;&#160;((F_CPU)/(<a class="el" href="activity4_8c.html#a62634036639f88eece6fbf226b45f84b">BAUD</a>*16UL)-1)</td></tr>
 <tr class="separator:a734bbab06e1a9fd2e5522db0221ff6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0be7647edafb0d7fb021ee397158d332"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="activity4_8c.html#a0be7647edafb0d7fb021ee397158d332">TRANSMITING_DATA</a>&#160;&#160;&#160;!(UCSR0A &amp; (1&lt;&lt;UDRE0))</td></tr>
 <tr class="separator:a0be7647edafb0d7fb021ee397158d332"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,21 +145,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define BAUDRATE&#160;&#160;&#160;((<a class="el" href="activity4_8c.html#a43bafb28b29491ec7f871319b5a3b2f8">F_CPU</a>)/(<a class="el" href="activity4_8c.html#a62634036639f88eece6fbf226b45f84b">BAUD</a>*16UL)-1)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a43bafb28b29491ec7f871319b5a3b2f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43bafb28b29491ec7f871319b5a3b2f8">&#9670;&nbsp;</a></span>F_CPU</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define F_CPU&#160;&#160;&#160;16000000</td>
+          <td class="memname">#define BAUDRATE&#160;&#160;&#160;((F_CPU)/(<a class="el" href="activity4_8c.html#a62634036639f88eece6fbf226b45f84b">BAUD</a>*16UL)-1)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -227,6 +211,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize UART. </p>
+<p>Initialize UART communication ports. </p>
 
 </div>
 </div>
@@ -247,6 +232,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>write UART </p>
+<p>Write character to ports.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">input</td><td></td></tr>
